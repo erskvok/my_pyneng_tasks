@@ -26,3 +26,11 @@
 """
 
 ip = "192.168.3.1"
+
+ip_pre = ip.split(".")
+
+templ = """
+{0:<10}{1:<10}{2:<10}{3:<10}
+{0:08b}  {1:08b}  {2:08b}  {3:08b}"""
+
+print(templ.format(int(ip_pre[0]), int(ip_pre[1]), int(ip_pre[2]), int(ip_pre[3])))
